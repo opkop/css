@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            margin: 10px;
+            padding: 60px;
+        }
+
+        .box1 {
+            background-color: green;
+        }
+
+        .box2 {
+            background-color: red;
+
+            /* top/bottom left/right z-index will now work */
+            /* here if we write top bottom then only top will work so write one at a time also in left and right */
+            position: relative;
+            top: 90px;
+            right: 40px; 
+
+            /* higher the z-index cover the box by it */
+            z-index: 3;
+            /*  bottom: 40px; */
+        }
+
+        .box3 {
+            background-color: yellow;
+            /* position: relative;
+            z-index: 2; */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+
+</html>

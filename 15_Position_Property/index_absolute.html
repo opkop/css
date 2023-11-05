@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box1 {
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            left: 3px;
+        }
+
+        .box2 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: yellow;
+        }
+
+        .box {
+            height: 20px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+
+        .parent {
+            padding: 20px;
+            margin: 10px;
+            border: 3px solid purple;
+            /* position: absolute; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <!-- <p>
+        if we write any position absolute in any box then it check its ancestor here in above box. if box ancestor is parent then in parent it check any position is written or not if not then it goes to parent ancestor which is body then body ancestor is html above html their is no any ancester.
+    </p>
+    <h1>
+        if parent ancester has non other then static positon/default position
+    </h1>
+    <p>
+        then its relative to parent ancestor
+    </p>
+    <h1>
+        if not
+    </h1>
+    <p> 
+        then it relative to html
+    </p> -->
+
+</body>
+
+</html>

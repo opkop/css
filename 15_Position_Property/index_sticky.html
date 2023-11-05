@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            height: 200px;
+            width: 80vw;
+            margin: 40px;
+            padding: 40px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: green;
+
+        }
+
+        .box2 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: burlywood;
+
+            /* just like in nav bar we see contact home which doesnot go up while scroll */
+            position: sticky;
+            /* bottom: 3px; */
+            top: 20px;
+            right: 90px;
+        }
+
+        .box4 {
+            background-color: pink;
+        }
+
+        .box5 {
+            background-color: aqua;
+        }
+
+        .parent {
+            padding: 20px;
+            margin: 10px;
+            border: 3px solid purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+    <img src="image.png" alt="image">
+    <a href="https://www.codewithharry.com/videos/web-development-in-hindi-1/">click</a>
+</body>
+
+</html>

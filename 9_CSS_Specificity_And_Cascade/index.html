@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+            background-color: aqua;
+        }
+        #pink{
+            color: aqua;
+            background-color: pink;
+        }
+        .orange{
+            color: black;
+            background-color: orange;
+        }
+        .green{
+            color: blue;
+            background-color: brown !important;
+        }
+
+        #c1{
+            color:blueviolet;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="red orange green" id="pink">
+        CSS Specificity
+    </div>
+    <div id="c1">
+        CSS
+    </div>
+    <p>
+        <h1>CSS Specificity Value</h1>
+        <p>inline element → 1000 </p>
+        <p>id selector → 100</p>
+        <p>class attribute and pseudo selector → 10</p>
+        <p>element selector → 1</p>
+        <p>universal selector → 0</p>
+    </p>
+</body>
+</html>

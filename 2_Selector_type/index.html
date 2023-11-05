@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class selector */
+        .green {
+            color: yellowgreen;
+            background-color: rgb(23, 118, 201);
+        }
+
+        /* element selector */
+        div {
+            color: orange;
+            background-color: blueviolet;
+        }
+
+        /* id selector */
+        #pink {
+            color: aqua;
+            background-color: brown;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: yellowgreen;
+            background-color: blanchedalmond;
+        }
+
+        /* descendent Selector */
+        div h1 {
+            color: blue;
+            background-color: peru;
+        }
+
+        /* attributes selector */
+        [data-x=a]{
+            color: rgb(226, 14, 49);
+            background-color: orange;
+        }
+
+        /* universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:hover {
+            background-color: pink;
+        }
+
+        a:active {
+            background-color: rgb(9, 227, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="green">
+        Class Selector
+    </div>
+
+    <div>
+        Element Selector
+    </div>
+
+    <div id="pink">
+        id Selector
+    </div>
+
+    <div>
+        <p>
+            Child Selector
+        </p>
+    </div>
+
+    <div>
+        <p>
+        <h1>
+            Descendent Selector
+        </h1>
+        </p>
+    </div>
+    
+    <span data-x="a">
+        Attributes Selector
+    </span><br>
+
+    <a href="https://kalzang.github.io/lamaBootstrap/">Click</a>
+</body>
+
+</html>
